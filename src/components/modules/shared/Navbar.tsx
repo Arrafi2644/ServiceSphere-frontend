@@ -10,7 +10,6 @@ import {
     Sheet,
     SheetContent,
     SheetTrigger,
-    SheetClose,
 } from '@/components/ui/sheet';
 import { DialogTitle } from '@radix-ui/react-dialog'; // ← This is the key import
 import { cn } from '@/lib/utils';
@@ -86,7 +85,7 @@ export default function Navbar() {
                 <Sheet open={open} onOpenChange={setOpen}>
                     <SheetTrigger asChild className="md:hidden">
                         <Button variant="ghost" size="icon">
-                            <Menu className="h-6 w-6" />
+                            <Menu className="h-8 w-8" />
                             <span className="sr-only">Open menu</span>
                         </Button>
                     </SheetTrigger>
@@ -94,12 +93,12 @@ export default function Navbar() {
                     <SheetContent side="right" className="w-60 px-2">
                         <DialogTitle className="sr-only">Navigation Menu</DialogTitle>
 
-                        <div className="flex flex-col space-y-6 mt-8">
-                            <nav className="flex flex-col space-y-6">
+                        <div className="flex flex-col space-y-4 mt-8">
+                            <nav className="flex flex-col space-y-4">
                                 <NavLinks onClick={() => setOpen(false)} />
                             </nav>
 
-                            <div className="flex flex-col space-y-2 pt-6 border-t">
+                            <div className="flex flex-col space-y-4 pt-6 border-t">
                                 <Button size="sm" variant="outline" className="w-full justify-start">
                                     <Lock />
                                     Log In
