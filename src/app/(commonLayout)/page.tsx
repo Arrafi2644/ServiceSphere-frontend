@@ -2,6 +2,7 @@ import { FeaturedGigs } from "@/components/modules/home/FeaturedGigs";
 import { Hero } from "@/components/modules/home/Hero";
 import { HowItWorks } from "@/components/modules/home/HowItWorks";
 import { PopularServices } from "@/components/modules/home/PopularServices";
+import { WhyChooseUs } from "@/components/modules/home/WhyChooseUs";
 
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
       <Hero title={"Hire Expert"} subtitle={"World's largest freelance marketplace. Millions of people use ServiceSphere to turn their ideas into reality."} />
       <PopularServices />
       <HowItWorks />
-      <FeaturedGigs />
+      <FeaturedGigs gigs={[]} />
+      <WhyChooseUs />
     </div>
   );
 }

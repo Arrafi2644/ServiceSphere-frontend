@@ -121,8 +121,8 @@ const gigs: Gig[] = [
 
 
   return (
-    <div className="w-full px-4 py-8 md:py-12 bg-gray-50">
-      <div className="max-w-7xl mx-auto">
+    <div className="w-full px-4 py-8 md:py-12 bg-white">
+      <div className="container mx-auto">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">
           <div>
