@@ -53,7 +53,7 @@ export default function Navbar() {
     const [open, setOpen] = React.useState(false);
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+        <header className="sticky top-0 z-50 w-full border-b bg-white backdrop-blur supports-[backdrop-filter]:bg-white/90">
             <div className="container mx-auto flex h-20 items-center justify-between px-4">
 
                 {/* Logo */}

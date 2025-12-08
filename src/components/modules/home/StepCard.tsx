@@ -11,7 +11,7 @@ export interface StepCardProps {
 
 export const StepCard: React.FC<StepCardProps> = ({ stepNumber, icon: Icon, title, description }) => {
   return (
-    <div className="relative flex flex-col items-center">
+    <div className="relative flex flex-col items-center fit">
       {/* Step Number Badge */}
       <div className="absolute top-2 -right-8 -translate-x-1/2 bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shadow-lg z-10">
         {stepNumber}
