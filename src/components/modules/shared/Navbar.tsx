@@ -54,7 +54,7 @@ export default function Navbar() {
 
     return (
         <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
-            <div className="container mx-auto flex h-16 items-center justify-between px-4">
+            <div className="container mx-auto flex h-20 items-center justify-between px-4">
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center space-x-2">
@@ -65,12 +65,12 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop Navigation */}
-                <nav className="hidden md:flex items-center space-x-4">
+                <nav className="hidden md:flex items-center space-x-6">
                     <NavLinks />
                 </nav>
 
                 {/* Desktop Buttons */}
-                <div className="hidden md:flex items-center space-x-2">
+                <div className="hidden md:flex items-center space-x-4">
                     <Button variant="ghost" size="sm" className="text-gray-700 hover:text-orange-600 border">
                         <Lock />
                         Log In
