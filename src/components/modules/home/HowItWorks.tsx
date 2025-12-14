@@ -53,14 +53,14 @@ const defaultSteps: Step[] = [
 
 const StepCard: React.FC<StepCardProps> = ({ stepNumber, icon: Icon, title, description }) => {
     return (
-        <div className="relative flex flex-col items-center">
+        <div className="relative transition-all duration-300 hover:-translate-y-1 flex flex-col items-center">
             {/* Step Number Badge */}
             <div className="absolute  top-2 md:-right-8 left-1/2 md:left-auto -translate-x-1/2 bg-orange-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-sm font-bold shadow-lg z-10">
                 {stepNumber}
             </div>
 
             {/* Card */}
-            <Card className="w-full hover:-translate-y-1 hover:shadow-[0_4px_20px_rgba(249,115,22,0.3)] transition-all duration-300 mt-6 border border-gray-200 hover:border-orange-500">
+            <Card className="w-full hover:shadow-[0_4px_20px_rgba(249,115,22,0.3)] mt-6 border border-gray-200 hover:border-orange-500">
                 <CardContent className="p-6 flex flex-col items-center text-center space-y-4">
                     <div className="bg-orange-50 p-4 rounded-lg">
                         <Icon className="w-8 h-8 text-orange-500" />
@@ -88,7 +88,7 @@ export const HowItWorks: React.FC<HowItWorksProps> = ({
                 />
                 
                 {/* Steps Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 relative">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-6 relative">
                     {steps.map((step, index) => (
                         <StepCard
                             key={step.id}
